@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+      <title> Happy Birthday Soniya!!</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+
+        <link rel="apple-touch-icon" sizes="180x180" href="fav/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="fav/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="fav/favicon-16x16.png">
+        <link rel="shortcut icon" type="image/png" href="fav/favicon.ico"/>
+        <link rel="manifest" href="fav/site.webmanifest">
+    
+    <style>
+        .center {
+        margin: auto;
+        width: 50%;
+        border: 3px solid #73AD21;
+        padding: 5px;
+        }
+    </style>
+    </head>
+    <script type="text/javascript">
+        var imageURLs = [
+            "./assests/hbd-01.png"
+            , "./assests/hbd-02.png"
+        ];
+        function getImageTag() {
+          var img = '<img src=\"';
+          var randomIndex = Math.floor(Math.random() * imageURLs.length);
+          img += imageURLs[randomIndex];
+          img += '\" height=\"40%\" width=\"100%\"/ alt=\"Happy Birthday\">'
+
+          return img;
+        }
+      </script>
+<body>
+    <br>
+    <div class="center">
+            <script type="text/javascript">
+                
+                document.write(getImageTag());
+                </script>
+        </div>
+    </body>
+
+    </html>
